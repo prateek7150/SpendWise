@@ -26,5 +26,4 @@
 - MongoDB with Mongoose
 - CORS and body-parser middleware
 
-## Folder Structure
 
