@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding-top: 90px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#main_heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+#dark_mode_toggle {
+    padding: 8px 14px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    transition: background 0.3s ease-in-out;
+}
+
+#dark_mode_toggle:hover {
+    background-color: #ddd;
+}
+
+section {
+    margin: 10px auto;
+    padding: 16px;
+    max-width: 960px;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+td button:hover {
+    background-color: darkred;
+}
+
+#summary_section p {
+    font-size: 16px;
+    text-align: center;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+#chart_section {
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+#expense_chart {
+    width: 280px;
+    height: 280px;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode #main_header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+.dark-mode button:hover {
+    background-color: #555;
+}
+
+.dark-mode table {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode th {
+    background-color: #444;
+}
+
+.dark-mode td {
+    background-color: #333;
+}
+
+.dark-mode td button {
+    background-color: darkred;
+}
+
+.dark-mode #dark_mode_toggle {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode #dark_mode_toggle:hover {
+    background-color: #555;
+}
